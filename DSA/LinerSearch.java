@@ -24,3 +24,16 @@ public class LinerSearch{
 		return -1;
 	}
 }
+
+
+public class Solution extends VersionControl {
+    public int firstBadVersion(int n) {
+        for(int i=n;i>=n;i--){
+            boolean isBad= isBadVersion(i); 
+            if(isBad==false){
+                return i+1;
+            }
+        }
+        return 0;        
+    }
+}
